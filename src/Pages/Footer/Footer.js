@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='text-white'>
+        <div className='text-white mt-4'>
 
             <footer className="page-footer font-small" style={{ backgroundColor: ' #19547b' }}>
 

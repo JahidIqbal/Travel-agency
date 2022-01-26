@@ -1,6 +1,5 @@
 [
     {
-        "_id": 1,
         "name": "Turkey Bridge BLOG",
         "image": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/04/27/111236.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -10,7 +9,6 @@
         "rating": 5
     },
     {
-        "_id": 2,
         "name": "Swiss Mountain BLOG",
         "image": "https://info.ehl.edu/hubfs/Imported_Blog_Media/Swiss_Tourism_Happiness_Index.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -20,7 +18,6 @@
         "rating": 4
     },
     {
-        "_id": 3,
         "name": "Netif Camp BLOG",
         "image": "https://us.123rf.com/450wm/zonecreative/zonecreative1606/zonecreative160600955/58871380-three-friends-camping-with-fire-on-mountain-at-sunset.jpg?ver=6.",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -30,7 +27,6 @@
         "rating": 4
     },
     {
-        "_id": 4,
         "name": "Tar desert BLOG",
         "image": "https://images.unsplash.com/photo-1525026198548-4baa812f1183?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZyaWVuZHxlbnwwfHwwfHw%3D&w=1000&q=80",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -40,7 +36,6 @@
         "rating": 3
     },
     {
-        "_id": 5,
         "name": "open tour BLOG",
         "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/96/b9.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -50,7 +45,6 @@
         "rating": 4
     },
     {
-        "_id": 6,
         "name": "louvre BLOG",
         "image": "https://images.unsplash.com/photo-1500039436846-25ae2f11882e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxvdXZyZXxlbnwwfHwwfHw%3D&w=1000&q=80",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -60,7 +54,6 @@
         "rating": 5
     },
     {
-        "_id": 7,
         "name": "Magrippa BLOG",
         "image": "https://images.unsplash.com/photo-1565357177333-0a9625c87f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFudGhlb258ZW58MHx8MHx8&w=1000&q=80",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -70,7 +63,6 @@
         "rating": 3
     },
     {
-        "_id": 8,
         "name": "EIFFEL BLOG",
         "image": "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -80,7 +72,6 @@
         "rating": 5
     },
     {
-        "_id": 9,
         "name": "POMPIDUE BLOG",
         "image": "https://c0.wallpaperflare.com/preview/246/765/226/paris-france-the-centre-pompidou-beaubourg.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -90,7 +81,6 @@
         "rating": 2
     },
     {
-        "_id": 10,
         "name": "NEAR FOREST BLOG",
         "image": "https://us.123rf.com/450wm/cppzoe/cppzoe1709/cppzoe170900003/85063808-five-happy-friends-fun-concept.jpg?ver=6",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -100,7 +90,6 @@
         "rating": 3
     },
     {
-        "_id": 11,
         "name": "BLUEOCEAN BLOG",
         "image": "https://w0.peakpx.com/wallpaper/413/44/HD-wallpaper-blue-ocean-boat-tour-fun-riding-nature-water-beach.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -110,7 +99,6 @@
         "rating": 3
     },
     {
-        "_id": 12,
         "name": " NIAGARA BLOG",
         "image": "https://i.pinimg.com/736x/47/36/4e/47364ead0e02e2058bf8fb955e9547e5--waterfall-wallpaper-fall-photos.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -120,7 +108,6 @@
         "rating": 4
     },
     {
-        "_id": 13,
         "name": "TALY HIKING BLOG",
         "image": "https://media.istockphoto.com/photos/young-couple-of-hikers-bound-up-ridge-together-picture-id1303216086?b=1&k=20&m=1303216086&s=170667a&w=0&h=NplYRlKiS15Ki9_BlXufbosQ1Pw_oMwfY4f18cF5v1Q=",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -130,7 +117,6 @@
         "rating": 4
     },
     {
-        "_id": 14,
         "name": "TEA GARDEN BLOG",
         "image": "https://blog.flyticket.com.bd/wp-content/uploads/2020/05/image005-1024x684.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -140,7 +126,6 @@
         "rating": 5
     },
     {
-        "_id": 15,
         "name": "rio de janeiro BLOG",
         "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmlvJTIwZGUlMjBqYW5laXJvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -150,7 +135,6 @@
         "rating": 4
     },
     {
-        "_id": 16,
         "name": "BARCELONA  BLOG",
         "image": "https://www.wallpapertip.com/wmimgs/157-1570783_barcelona-city-wallpapers-hd-wallpapers-for-desktop-lisbon.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -160,7 +144,6 @@
         "rating": 3
     },
     {
-        "_id": 17,
         "name": "LALBAGH BLOG",
         "image": "https://live.staticflickr.com/8879/18385379602_bec2710ceb_b.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -170,7 +153,6 @@
         "rating": 4
     },
     {
-        "_id": 18,
         "name": "ALVARAE COAST BLOG",
         "image": "https://w0.peakpx.com/wallpaper/540/322/HD-wallpaper-algarve-coast-portugal-rock-portugal-ocean-town.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -180,7 +162,6 @@
         "rating": 3
     },
     {
-        "_id": 19,
         "name": "PORTO LUIS BLOG",
         "image": "https://img.lovepik.com/photo/50134/7760.jpg_wh860.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",
@@ -190,7 +171,6 @@
         "rating": 5
     },
     {
-        "_id": 20,
         "name": "SINTERA BLOG",
         "image": "http://images.fanpop.com/images/image_uploads/Sintra--Portugal-portugal-585553_1024_768.jpg",
         "description": "Tour guides require strong communication and public speaking skills to convey information effectively. In addition, active listening skills ensure tourists get your full attention. This skill also helps you understand any questions you receive during a tour.",

@@ -8,7 +8,7 @@ const ServiceDetails = () => {
     let { id } = useParams();
     const [serviceDetails, setServiceDetails] = useState([])
     useEffect(() => {
-        fetch('/blog.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then((data) => {
                 const foundService = data.filter(detail => detail._id == id)

@@ -26,15 +26,15 @@ const ServiceDetails = () => {
                 <div className=" col-md-12">
                     <div className="card h-100 shadow-lg">
                         <img src={image} className="card-img-top " alt="..." />
-                        <div className="card-body">
+                        <div className="card-body " >
 
-                            <p className="text-nowrap"><strong >{name}</strong></p>
+                            <p className="text-nowrap text-uppercase"><strong >{name}</strong></p>
                             <p className="card-text"> <strong>Description:</strong> {description}</p>
 
                             <p className="text-nowrap"><strong >Price:</strong>{price}</p>
 
                             <p className="text-nowrap"><strong >Date</strong>{date}</p>
-                            <p className="text-nowrap"><strong >Time:</strong>{time}</p>
+                            <p className="text-nowrap"><strong >Duration:</strong>{time}</p>
                             <p className="text-nowrap"><strong >Time:</strong>{rating}</p>
                         </div>
 

@@ -21,7 +21,7 @@ const AddProducts = () => {
     return (
         <div style={{ backgroundColor: 'background: linear-gradient(to right, #b3ffab, #12fff7);' }}>
 
-            <h3 className="text-dark fw-bolder ">ADD BLOG</h3>
+            <h3 className="text-dark fw-bolder ">Add Blog</h3>
             <div className="login-box w-100">
                 <div className="border border d-flex justify-content-center align-items-center  ">
                     <div className="login-form">

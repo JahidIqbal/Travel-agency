@@ -38,16 +38,18 @@ const Services = () => {
 
 
                 </div>
-                <div className="pagination bg-info justify-content-center">
-                    {
-                        [...Array(pageCount).keys()]
-                            .map(number => <buttton
-                                key={number}
-                                onClick={() => setPage(number)}
-                                className="btn btn-primary justify-content-center">{number}</buttton>)
-                    }
-                </div>
 
+
+            </div>
+
+            <div className="pagination  justify-content-center mt-4">
+                {
+                    [...Array(pageCount).keys()]
+                        .map(number => <buttton
+                            key={number}
+                            onClick={() => setPage(number)}
+                            className="btn btn-info btn-lg  mx-2">Page{number + 1}</buttton>)
+                }
             </div>
         </div>
 

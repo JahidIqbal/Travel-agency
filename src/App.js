@@ -7,6 +7,7 @@ import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Login from './Pages/Login/Login';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Register from './Pages/Register/Register';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route exact path="/register">
               <Register />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
             </Route>
           </Switch>
           <Footer />

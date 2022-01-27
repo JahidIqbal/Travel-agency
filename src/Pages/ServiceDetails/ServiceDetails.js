@@ -29,13 +29,13 @@ const ServiceDetails = () => {
                         <div className="card-body " >
 
                             <p className="text-nowrap text-uppercase"><strong >{name}</strong></p>
-                            <p className="card-text"> <strong>Description:</strong> {description}</p>
+                            <p className="card-text"> {description}</p>
 
-                            <p className="text-nowrap"><strong >Price:</strong>{price}</p>
+                            <p className="text-nowrap"><strong >Price:$</strong>{price}</p>
 
-                            <p className="text-nowrap"><strong >Date</strong>{date}</p>
+                            <p className="text-nowrap"><strong >Date: </strong>{date}</p>
                             <p className="text-nowrap"><strong >Duration:</strong>{time}</p>
-                            <p className="text-nowrap"><strong >Time:</strong>{rating}</p>
+                            <p className="text-nowrap"><strong >Ratings:</strong>{rating}<i class="fas fa-star text-warning"></i></p>
                         </div>
 
                     </div>

@@ -1,16 +1,16 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Review from "../DashboardHome/Review/Review";
+import './Dashboard.css'
 
 const Dashboard = () => {
     let { path, url } = useRouteMatch();
     const { admin, logOut } = useAuth();
     return (
-        <div>
+        <div style={{ background: `linear-gradient(to right, #70e1f5, #ffd194) ` }}>
             <div className="row">
                 <div className="col-md-2 col-sm-4 sidebar1">
-                    <div className="logo">
-                        <img src={brandicon} alt="" width="50" />
-                    </div>
+
                     <br />
                     <div className="left-navigation">
                         <ul className="list">
@@ -19,7 +19,7 @@ const Dashboard = () => {
                                 <li>
                                     <h2>DashBoard</h2>
 
-                                    <Link to={`${url}/payment`} className="nav-link text-white">Payment</Link>
+
 
                                     <Link to={`${url}/seeorder`} className="nav-link text-white">my orders</Link>
 
@@ -62,30 +62,16 @@ const Dashboard = () => {
 
                     <Switch>
 
-                        <Route path={`${path}/seeorder`}>
-                            <MyOrders></MyOrders>
+                        <Route path={`${path}/`}>
+                            <Review />
                         </Route>
 
                         <Route path={`${path}/review`}>
-                            <Review></Review>
-                        </Route>
-                        <Route path={`${path}/payment`}>
-                            <Payment></Payment>
+                            <Review />
                         </Route>
 
-                        <AdminRoute path={`${path}/makeadmin`}>
-                            <MakeAdmin></MakeAdmin>
-                        </AdminRoute>
 
-                        <AdminRoute path={`${path}/addaproduct`}>
-                            <AddProducts></AddProducts>
-                        </AdminRoute>
-                        <AdminRoute path={`${path}/manageallorders`}>
-                            <ManageAllOrders></ManageAllOrders>
-                        </AdminRoute>
-                        <AdminRoute path={`${path}/manageproducts`}>
-                            <ManageProducts></ManageProducts>
-                        </AdminRoute>
+
                     </Switch>
 
                 </div>

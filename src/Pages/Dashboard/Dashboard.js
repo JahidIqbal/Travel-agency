@@ -1,6 +1,7 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import AdminRoute from "../AdminRoute/AdminRoute";
+import AddProducts from "../DashboardHome/AddProducts/AddProducts";
 import Dashtable from "../DashboardHome/DashTable/Dashtable";
 import MakeAdmin from "../DashboardHome/MakeAdmin/MakeAdmin";
 import Review from "../DashboardHome/Review/Review";
@@ -36,7 +37,7 @@ const Dashboard = () => {
 
                                     <Link to={`${url}/makeadmin`} className="nav-link text-white"> <i className="fas fa-user-shield"></i> Make Admin</Link>
 
-                                    <Link to={`${url}/addaproduct`} className="nav-link text-white"><i className="fas fa-plus"></i> Add a Product</Link>
+                                    <Link to={`${url}/addaproduct`} className="nav-link text-white"><i className="fas fa-plus"></i> Add a Blog</Link>
 
                                     <Link to={`${url}/manageallorders`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Manage All Blogs</Link>
 
@@ -70,7 +71,9 @@ const Dashboard = () => {
                             <MakeAdmin />
                         </AdminRoute>
 
-
+                        <AdminRoute path={`${path}/addaproduct`}>
+                            <AddProducts></AddProducts>
+                        </AdminRoute>
                     </Switch>
 
                 </div>

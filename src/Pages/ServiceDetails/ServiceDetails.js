@@ -11,7 +11,7 @@ const ServiceDetails = () => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then((data) => {
-                const foundService = data.filter(detail => detail._id == id)
+                const foundService = data.services.filter(detail => detail._id == id)
                 console.log(foundService);
                 setServiceDetails(foundService);
 

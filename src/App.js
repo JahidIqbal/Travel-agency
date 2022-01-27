@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Register from './Pages/Register/Register';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
 
@@ -24,9 +25,9 @@ function App() {
             <Route exact path="/home">
               <Home />
             </Route>
-            <Route path="/buynow/:id">
+            <PrivateRoute path="/buynow/:id">
               <ServiceDetails />
-            </Route>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login />
             </Route>

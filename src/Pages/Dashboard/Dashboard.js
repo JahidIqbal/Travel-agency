@@ -1,5 +1,8 @@
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import AdminRoute from "../AdminRoute/AdminRoute";
+import Dashtable from "../DashboardHome/DashTable/Dashtable";
+import MakeAdmin from "../DashboardHome/MakeAdmin/MakeAdmin";
 import Review from "../DashboardHome/Review/Review";
 import './Dashboard.css'
 
@@ -19,17 +22,9 @@ const Dashboard = () => {
                                 <li>
                                     <h2>DashBoard</h2>
 
-
-
-                                    <Link to={`${url}/seeorder`} className="nav-link text-white">my orders</Link>
-
-                                    <Link to={`${url}/review`} className="nav-link text-white">Review</Link>
+                                    <Link to={`${url}/review`} className="nav-link text-white"> <i className="fas fa-comments"></i> Review</Link>
                                 </li>
                             }
-
-
-
-
 
                         </ul>
 
@@ -39,13 +34,13 @@ const Dashboard = () => {
                                 <li>
                                     <h2>DashBoard</h2>
 
-                                    <Link to={`${url}/makeadmin`} className="nav-link text-white">Make Admin</Link>
+                                    <Link to={`${url}/makeadmin`} className="nav-link text-white"> <i className="fas fa-user-shield"></i> Make Admin</Link>
 
-                                    <Link to={`${url}/addaproduct`} className="nav-link text-white">Add a Product</Link>
+                                    <Link to={`${url}/addaproduct`} className="nav-link text-white"><i className="fas fa-plus"></i> Add a Product</Link>
 
-                                    <Link to={`${url}/manageallorders`} className="nav-link text-white">Manage All orders</Link>
+                                    <Link to={`${url}/manageallorders`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Manage All Blogs</Link>
 
-                                    <Link to={`${url}/manageproducts`} className="nav-link text-white">Manage Products</Link>
+                                    <Link to={`${url}/manageproducts`} className="nav-link text-white"> <i className="fab fa-blogger-b"></i> Managed Blogs</Link>
 
                                     <Link to="" className="nav-link text-white">
                                         <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
@@ -56,20 +51,24 @@ const Dashboard = () => {
                         </ul>
 
 
+
                     </div>
                 </div>
                 <div className="col-md-10 col-sm-8 main-content">
 
                     <Switch>
 
-                        <Route path={`${path}/`}>
-                            <Review />
+                        <Route exact path={`${path}/`}>
+                            <Dashtable />
                         </Route>
+
 
                         <Route path={`${path}/review`}>
                             <Review />
                         </Route>
-
+                        <AdminRoute path={`${path}/makeadmin`}>
+                            <MakeAdmin />
+                        </AdminRoute>
 
 
                     </Switch>

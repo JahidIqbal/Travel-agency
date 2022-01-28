@@ -4,6 +4,7 @@ import AdminRoute from "../AdminRoute/AdminRoute";
 import AddProducts from "../DashboardHome/AddProducts/AddProducts";
 import Dashtable from "../DashboardHome/DashTable/Dashtable";
 import MakeAdmin from "../DashboardHome/MakeAdmin/MakeAdmin";
+import ManageProducts from "../DashboardHome/ManageProducts/ManageProducts";
 import Review from "../DashboardHome/Review/Review";
 import './Dashboard.css'
 
@@ -39,9 +40,9 @@ const Dashboard = () => {
 
                                     <Link to={`${url}/addaproduct`} className="nav-link text-white"><i className="fas fa-plus"></i> Add a Blog</Link>
 
-                                    <Link to={`${url}/manageallorders`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Manage All Blogs</Link>
+                                    {/* <Link to={`${url}/manageallorders`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Manage All Blogs</Link> */}
 
-                                    <Link to={`${url}/manageproducts`} className="nav-link text-white"> <i className="fab fa-blogger-b"></i> Managed Blogs</Link>
+                                    <Link to={`${url}/manageproducts`} className="nav-link text-white"> <i className="fab fa-blogger-b"></i> Managed All Blogs</Link>
 
                                     <Link to="" className="nav-link text-white">
                                         <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
@@ -74,6 +75,12 @@ const Dashboard = () => {
                         <AdminRoute path={`${path}/addaproduct`}>
                             <AddProducts></AddProducts>
                         </AdminRoute>
+
+
+                        <AdminRoute path={`${path}/manageProducts`}>
+                            <ManageProducts></ManageProducts>
+                        </AdminRoute>
+
                     </Switch>
 
                 </div>

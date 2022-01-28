@@ -11,7 +11,7 @@ const ServiceDetails = () => {
         fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then((data) => {
-                const foundService = data.services.filter(detail => detail._id == id)
+                const foundService = data.services.filter(detail => detail._id === id)
                 console.log(foundService);
                 setServiceDetails(foundService);
 
@@ -21,7 +21,7 @@ const ServiceDetails = () => {
 
     const { name, description, image, price, date, time, rating } = serviceDetails[0] || {}
     return (
-        <div className="container mt-4  ">
+        <div className="container mt-4 " data-aos="slide-up">
             <div className="row justify-content-center align-items-center ">
                 <div className=" col-md-12">
                     <div className="card h-100 shadow-lg">

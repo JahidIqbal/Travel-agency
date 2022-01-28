@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Service = (props) => {
     const { name, image, description, _id } = props.service;
     return (
-        <div>
+        <div data-aos="flip-right">
             <div className="col">
                 <div className="card h-100 shadow-lg" >
                     <img src={image} className="card-img-top" width="500" height="500" alt="..." />
@@ -14,7 +14,7 @@ const Service = (props) => {
 
                         <Link to={`/buynow/${_id}`}>
                             <button className="btn btn-dark border-0" style={{ background: `linear-gradient(to right, #b993d6, #8ca6db)` }}  ><img src="" alt="" width="25" />
-                                Buy now</button>
+                                Read more</button>
                         </Link>
 
 

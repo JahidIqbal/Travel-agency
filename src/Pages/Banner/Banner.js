@@ -8,14 +8,23 @@ const Banner = () => {
     return (
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
             <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active" >
                     <img src={banner1} className="d-block w-100" alt="..." />
+                    <div className="carousel-caption " >
+                        <p className="text-white"> <em>ExpoTrip is your Best Travelling partner!!</em></p>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner2} className="d-block w-100" alt="..." />
+                    <div className="carousel-caption " >
+                        <p className="text-white"> <em>ExpoTrip helps you to explore more!</em></p>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src={banner3} className="d-block w-100" alt="..." />
+                    <div className="carousel-caption " >
+                        <p className="text-white"> <em>Every destination is a new destination!</em></p>
+                    </div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

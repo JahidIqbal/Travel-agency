@@ -7,7 +7,6 @@ import MakeAdmin from "../DashboardHome/MakeAdmin/MakeAdmin";
 import ManageProducts from "../DashboardHome/ManageProducts/ManageProducts";
 import Review from "../DashboardHome/Review/Review";
 import StatusRatings from "../DashboardHome/StatusRatings/StatusRatings";
-import MyOrders from "../MyOrders/MyOrders";
 import './Dashboard.css'
 
 const Dashboard = () => {
@@ -28,7 +27,8 @@ const Dashboard = () => {
 
                                     <Link to={`${url}/review`} className="nav-link text-white"> <i className="fas fa-comments"></i> Review</Link>
 
-                                    <Link to={`${url}/seeorder`} className="nav-link text-white"> <i class="fas fa-star text-warning"></i> my Reviews</Link>
+                                    <Link to="" className="nav-link text-white">
+                                        <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
                                 </li>
                             }
 
@@ -74,9 +74,7 @@ const Dashboard = () => {
                             <Review />
                         </Route>
 
-                        <Route path={`${path}/seeorder`}>
-                            <MyOrders></MyOrders>
-                        </Route>
+
                         <AdminRoute path={`${path}/makeadmin`}>
                             <MakeAdmin />
                         </AdminRoute>

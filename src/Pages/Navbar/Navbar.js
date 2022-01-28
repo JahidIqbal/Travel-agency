@@ -22,9 +22,6 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink to="/dashboard" className="nav-link text-white">Dashboard</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink to="/blog" className="nav-link text-white">Blog</NavLink>
-                            </li>
 
                             <li className="nav-item">
                                 <span className="nav-link text-white">{user.email && <li className="nav-item">

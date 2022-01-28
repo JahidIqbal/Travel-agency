@@ -6,6 +6,8 @@ import Dashtable from "../DashboardHome/DashTable/Dashtable";
 import MakeAdmin from "../DashboardHome/MakeAdmin/MakeAdmin";
 import ManageProducts from "../DashboardHome/ManageProducts/ManageProducts";
 import Review from "../DashboardHome/Review/Review";
+import StatusRatings from "../DashboardHome/StatusRatings/StatusRatings";
+import MyOrders from "../MyOrders/MyOrders";
 import './Dashboard.css'
 
 const Dashboard = () => {
@@ -25,6 +27,8 @@ const Dashboard = () => {
                                     <h2>DashBoard</h2>
 
                                     <Link to={`${url}/review`} className="nav-link text-white"> <i className="fas fa-comments"></i> Review</Link>
+
+                                    <Link to={`${url}/seeorder`} className="nav-link text-white"> <i class="fas fa-star text-warning"></i> my Reviews</Link>
                                 </li>
                             }
 
@@ -40,9 +44,10 @@ const Dashboard = () => {
 
                                     <Link to={`${url}/addaproduct`} className="nav-link text-white"><i className="fas fa-plus"></i> Add a Blog</Link>
 
-                                    {/* <Link to={`${url}/manageallorders`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Manage All Blogs</Link> */}
-
                                     <Link to={`${url}/manageproducts`} className="nav-link text-white"> <i className="fab fa-blogger-b"></i> Managed All Blogs</Link>
+
+
+                                    <Link to={`${url}/statusratings`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Decision Making</Link>
 
                                     <Link to="" className="nav-link text-white">
                                         <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
@@ -68,6 +73,10 @@ const Dashboard = () => {
                         <Route path={`${path}/review`}>
                             <Review />
                         </Route>
+
+                        <Route path={`${path}/seeorder`}>
+                            <MyOrders></MyOrders>
+                        </Route>
                         <AdminRoute path={`${path}/makeadmin`}>
                             <MakeAdmin />
                         </AdminRoute>
@@ -79,6 +88,9 @@ const Dashboard = () => {
 
                         <AdminRoute path={`${path}/manageProducts`}>
                             <ManageProducts></ManageProducts>
+                        </AdminRoute>
+                        <AdminRoute path={`${path}/statusratings`}>
+                            <StatusRatings></StatusRatings>
                         </AdminRoute>
 
                     </Switch>

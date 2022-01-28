@@ -9,6 +9,7 @@ const Review = () => {
     const { user } = useAuth();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
+        data.status = 'pending';
         console.log(data)
 
         axios.post('http://localhost:5000/ratings', data)
@@ -47,15 +48,12 @@ const Review = () => {
                                     className="p-2 m-2 w-100" />
                                 <br />
 
-
-
                                 <input type="number" {...register("number", { required: true })} placeholder="rating"
                                     defaultValue={user.number}
                                     className="p-2 m-2 w-100"
                                 />
 
                                 <br />
-
 
                                 <input type="submit" value="Submit" className="btn btn w-50 mb-2" style={{ background: `linear-gradient(to right, #b993d6, #8ca6db)` }} />
                             </form>

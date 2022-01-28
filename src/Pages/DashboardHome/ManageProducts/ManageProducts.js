@@ -2,18 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 
 const ManageProducts = () => {
-
     const [manageProducts, setManageProducts] = useState([])
     useEffect(() => {
         fetch('http://localhost:5000/manageProducts')
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, [])
-
-
-
-
-
 
     const handleRemove = id => {
         const url = `http://localhost:5000/manageProducts/${id}`;
@@ -24,7 +18,6 @@ const ManageProducts = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
                     if (data.deletedCount) {
                         alert('Order deleted succssfully')
                         const remaining = manageProducts.filter(order => order._id !== id);
@@ -61,10 +54,8 @@ const ManageProducts = () => {
                                     <td>{pd?.price}</td>
 
 
-
-
                                     <td>
-                                        <button onClick={() => handleRemove(pd._id)} className="btn"><i className="fas fa-trash"></i></button>
+                                        <button onClick={() => handleRemove(pd._id)} className="btn"><i className="fas fa-trash text-danger"></i></button>
 
                                     </td>
 

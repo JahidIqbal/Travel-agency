@@ -1,19 +1,37 @@
-import { useEffect, useState } from "react";
-import useAuth from "../../hooks/useAuth";
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 
-const MyOrders = () => {
-    const { user } = useAuth();
-    const [myOrder, setMyOrder] = useState([])
+const StatusRatings = () => {
+    const [status, setStatus] = useState([])
+    const [manageRatings, setManageRatings] = useState([])
+
+
     useEffect(() => {
-        const url = `http://localhost:5000/ratings?email=${user.email}`
-        fetch(url)
+        fetch('http://localhost:5000/ratings')
             .then(res => res.json())
-            .then(data => setMyOrder(data));
+            .then(data => setManageRatings(data))
     }, [])
+    const handleStatus = (_id, pd) => {
+        pd.status = "shipped";
 
-    const handleDelete = id => {
+        fetch(`http://localhost:5000/ratings/${_id}`, {
+            method: 'PUT',
+            headers:
+                { "content-type": "application/json" },
+            body: JSON.stringify(pd),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data?.modifiedCount) {
+                    setStatus(false);
+                }
+            });
+    }
+
+
+    const handleRemove = id => {
         const url = `http://localhost:5000/ratings/${id}`;
-        const isReady = window.confirm('are you sure you want to delete this order?');
+        const isReady = window.confirm('are you sure you want to delete this ratings?');
         if (isReady) {
             fetch(url, {
                 method: 'DELETE'
@@ -23,19 +41,15 @@ const MyOrders = () => {
                     console.log(data)
                     if (data.deletedCount) {
                         alert('Order deleted succssfully')
-                        const remaining = myOrder.filter(order => order._id !== id);
-                        setMyOrder(remaining);
+                        const remaining = manageRatings.filter(order => order._id !== id);
+                        setManageRatings(remaining);
 
                     }
                 })
         }
     }
 
-
-
-
     return (
-
         <div>
             <div>
                 <table className="table table-borderless  text-bold"  >
@@ -44,6 +58,7 @@ const MyOrders = () => {
                             <th scope="col">Serial</th>
                             <th scope="col">Testimonials list <i className="far fa-clipboard"></i></th>
                             <th scope="col">Description </th>
+                            <th scope="col">Status</th>
                             <th scope="col">Action <i className="fas fa-ban"></i></th>
 
                         </tr>
@@ -51,7 +66,7 @@ const MyOrders = () => {
 
 
                     {
-                        myOrder?.map((pd, index) =>
+                        manageRatings?.map((pd, index) =>
 
                             <tbody key={pd._id}>
                                 <tr>
@@ -60,7 +75,14 @@ const MyOrders = () => {
                                     <td>{pd?.Description}</td>
 
                                     <td>
-                                        <button onClick={() => handleDelete(pd._id)} className="btn"><i className="fas fa-trash text-danger"></i></button>
+                                        <button onClick={() => handleStatus(pd._id, pd)} className="btn btn-success btn-sm mx-2">
+                                            {pd?.status}</button>
+
+                                    </td>
+
+
+                                    <td>
+                                        <button onClick={() => handleRemove(pd._id)} className="btn"><i className="fas fa-trash text-danger"></i></button>
 
                                     </td>
 
@@ -79,8 +101,7 @@ const MyOrders = () => {
             </div>
 
         </div>
-
     );
 };
 
-export default MyOrders;
+export default StatusRatings;

@@ -12,7 +12,7 @@ const Review = () => {
         data.status = 'pending';
         console.log(data)
 
-        axios.post('http://localhost:5000/ratings', data)
+        axios.post('https://whispering-plains-32818.herokuapp.com/ratings', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

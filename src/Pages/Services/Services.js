@@ -9,7 +9,7 @@ const Services = () => {
     const [pageCount, setPageCount] = useState(0);
     const size = 10;
     useEffect(() => {
-        fetch(`http://localhost:5000/services?page=${page}&&size=${size}`)
+        fetch(`https://whispering-plains-32818.herokuapp.com/services?page=${page}&&size=${size}`)
 
             .then(res => res.json())
             .then(data => {

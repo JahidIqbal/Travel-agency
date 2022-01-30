@@ -10,7 +10,7 @@ const AddProducts = () => {
     const onSubmit = data => {
         console.log(data)
 
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://whispering-plains-32818.herokuapp.com/services', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

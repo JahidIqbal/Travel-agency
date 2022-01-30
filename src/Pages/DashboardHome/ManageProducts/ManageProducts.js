@@ -4,13 +4,13 @@ import React, { useEffect, useState } from 'react';
 const ManageProducts = () => {
     const [manageProducts, setManageProducts] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/manageProducts')
+        fetch('https://whispering-plains-32818.herokuapp.com/manageProducts')
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, [])
 
     const handleRemove = id => {
-        const url = `http://localhost:5000/manageProducts/${id}`;
+        const url = `https://whispering-plains-32818.herokuapp.com/manageProducts/${id}`;
         const isReady = window.confirm('are you sure you want to delete this order?');
         if (isReady) {
             fetch(url, {

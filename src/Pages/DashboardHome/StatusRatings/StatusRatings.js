@@ -7,14 +7,14 @@ const StatusRatings = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/ratings')
+        fetch('https://whispering-plains-32818.herokuapp.com/ratings')
             .then(res => res.json())
             .then(data => setManageRatings(data))
     }, [])
     const handleStatus = (_id, pd) => {
         pd.status = "shipped";
 
-        fetch(`http://localhost:5000/ratings/${_id}`, {
+        fetch(`https://whispering-plains-32818.herokuapp.com/ratings/${_id}`, {
             method: 'PUT',
             headers:
                 { "content-type": "application/json" },
@@ -30,7 +30,7 @@ const StatusRatings = () => {
 
 
     const handleRemove = id => {
-        const url = `http://localhost:5000/ratings/${id}`;
+        const url = `https://whispering-plains-32818.herokuapp.com/ratings/${id}`;
         const isReady = window.confirm('are you sure you want to delete this ratings?');
         if (isReady) {
             fetch(url, {

@@ -10,7 +10,7 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-sm navbar-dark navbar-custom">
                 <div className="container-fluid" style={{ backgroundColor: ' #19547b' }}>
-                    <NavLink to="/" className="navbar-brand h5 text-white">ExpoTrip</NavLink>
+                    <NavLink to="/" className="navbar-brand h5 text-white">ExpoTrip  <i className="fas fa-umbrella-beach"></i></NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

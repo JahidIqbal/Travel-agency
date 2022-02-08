@@ -14,7 +14,7 @@ const Testimonials = () => {
     return (
 
         <div className=" mx-auto mt-5">
-            <h2 className=" fw-bolder display-4  w-100 ">What Our Client Says</h2>
+            <h2 className=" fw-bolder display-4  w-100 text-uppercase mb-4">What Our Client Says</h2>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
 

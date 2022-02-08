@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
 
+
 const StatusRatings = () => {
     const [status, setStatus] = useState([])
     const [manageRatings, setManageRatings] = useState([])
@@ -59,7 +60,7 @@ const StatusRatings = () => {
                             <th scope="col">Testimonials list <i className="far fa-clipboard"></i></th>
                             <th scope="col">Description </th>
                             <th scope="col">Status</th>
-                            <th scope="col">Action <i className="fas fa-ban"></i></th>
+                            <th scope="col">Action</th>
 
                         </tr>
                     </thead>
@@ -80,11 +81,11 @@ const StatusRatings = () => {
 
                                     </td>
 
-
                                     <td>
                                         <button onClick={() => handleRemove(pd._id)} className="btn"><i className="fas fa-trash text-danger"></i></button>
 
                                     </td>
+
 
                                 </tr>
                             </tbody>

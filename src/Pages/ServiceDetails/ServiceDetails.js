@@ -35,7 +35,7 @@ const ServiceDetails = () => {
 
                             <p className="text-nowrap"><strong >Date: </strong>{date}</p>
                             <p className="text-nowrap"><strong >Duration:</strong>{time}</p>
-                            <p className="text-nowrap"><strong >Ratings:</strong>{rating}<i class="fas fa-star text-warning"></i></p>
+                            <p className="text-nowrap"><strong >Ratings:</strong>{rating}<i className="fas fa-star text-warning"></i></p>
                         </div>
 
                     </div>

@@ -28,13 +28,13 @@ const Services = () => {
         <div>
             {
                 services.length === 0 ?
-                    <div className="spinner-border text-info " role="status" >
+                    <div className="spinner-border text-dark " role="status" >
                         <span className="visually-hidden">Loading...</span>
                     </div>
 
                     :
                     <div className=" mx-auto mt-5">
-                        <h2 className=" fw-bolder display-4  w-100 mt-5">World Tour Blog </h2>
+                        <h2 className=" fw-bolder display-4  w-100 mb-4">World Tour Blog </h2>
 
                         <div className="row row-cols-1 row-cols-md-3 g-4" >
 
@@ -57,7 +57,7 @@ const Services = () => {
                         .map(number => <buttton
                             key={number}
                             onClick={() => setPage(number)}
-                            className="btn btn-info btn-lg  mx-2">Page{number + 1}</buttton>)
+                            className="btn btn-info btn-lg  mx-2 text-white" style={{ background: "#19547b" }}>Page{number + 1}</buttton>)
                 }
             </div>
         </div>

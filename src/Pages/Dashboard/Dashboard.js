@@ -27,8 +27,7 @@ const Dashboard = () => {
 
                                     <Link to={`${url}/review`} className="nav-link text-white"> <i className="fas fa-comments"></i> Review</Link>
 
-                                    <Link to="" className="nav-link text-white">
-                                        <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
+
                                 </li>
                             }
 
@@ -48,6 +47,8 @@ const Dashboard = () => {
 
 
                                     <Link to={`${url}/statusratings`} className="nav-link text-white"> <i className="fab fa-first-order"></i> Decision Making</Link>
+
+
 
                                     <Link to="" className="nav-link text-white">
                                         <button className="btn btn-light" onClick={logOut}> Logout</button> </Link>
@@ -90,6 +91,7 @@ const Dashboard = () => {
                         <AdminRoute path={`${path}/statusratings`}>
                             <StatusRatings></StatusRatings>
                         </AdminRoute>
+
 
                     </Switch>
 

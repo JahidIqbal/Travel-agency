@@ -32,6 +32,9 @@ const Login = () => {
 
 
         <div className="container w-50" style={{ background: `linear-gradient(to right, #556270, #ff6b6b)` }} >
+            {isLoading && <div className="spinner-border text-info text-center" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </div>}
 
             <h3 className="mt-5 text-center text-dark fw-bolder ">Login Form</h3>
             <form onSubmit={handleLoginSubmit}>
@@ -52,9 +55,7 @@ const Login = () => {
                     onBlur={handleOnChange} />
                 <br />
                 <button className="btn btn-light mt-2 mb-2" type="submit">Login</button>
-                {isLoading && <div className="spinner-border text-info text-center" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>}
+
                 {user?.email && <div className="alert alert-success" role="alert">
                     User created successFully!
                 </div>}

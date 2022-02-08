@@ -37,7 +37,6 @@ const ManageProducts = () => {
                             <th scope="col">Serial</th>
                             <th scope="col">All Blog <i className="far fa-clipboard"></i></th>
                             <th scope="col">Price <i className="fas fa-money-bill-wave"></i></th>
-
                             <th scope="col">Action <i className="fas fa-ban"></i></th>
 
                         </tr>
@@ -52,14 +51,9 @@ const ManageProducts = () => {
                                     <td>{index + 1}</td>
                                     <td className='text-lowercase text-bold'> {pd?.name} </td>
                                     <td>{pd?.price}</td>
-
-
                                     <td>
                                         <button onClick={() => handleRemove(pd._id)} className="btn"><i className="fas fa-trash text-danger"></i></button>
-
                                     </td>
-
-
                                 </tr>
                             </tbody>
 

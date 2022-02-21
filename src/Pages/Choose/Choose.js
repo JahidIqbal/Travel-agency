@@ -6,9 +6,9 @@ const Choose = () => {
     return (
 
         <div className='container mt-4 '>
-
             <div className="col-md-12 ">
-                <h2 className=" fw-bolder display-4  w-100 text-uppercase mb-4" >Why Choose Us</h2>
+                <h1 className=" fw-bolder text-uppercase w-100 mt-5 text-center underline mb-2" >Why Choose Us</h1>
+                <br />
                 <div data-aos="fade-down-right" className="row ">
                     <div className="col-xl-3 col-lg-6">
                         <div className="card l-bg-cherry">

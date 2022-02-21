@@ -1,0 +1,36 @@
+.box {
+    margin:  0 20px 0 20px;
+}
+
+.box-part {
+    background: #F0FFFF;
+    padding: 60px 10px;
+    margin: 10px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px
+}
+
+
+.text {
+    margin: 20px 0px
+}
+
+.underline {
+    text-decoration: none; 
+    position: relative; 
+  }   
+
+ .underline:after {
+     position: absolute;
+     content: '';
+     height: 2px;
+     bottom: -4px; 
+     margin: 0 auto;
+       left: 0;
+     right: 0;
+       width: 16%;
+       background: linear-gradient(to right, #00d2ff, #3a7bd5);
+     
+ }
+  
+  

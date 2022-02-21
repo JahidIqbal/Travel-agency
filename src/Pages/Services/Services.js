@@ -34,7 +34,8 @@ const Services = () => {
 
                     :
                     <div className=" mx-auto mt-5">
-                        <h2 className=" fw-bolder display-4  w-100 mb-4">World Tour Blog </h2>
+                        <h1 className=" fw-bolder text-uppercase w-100 mt-5 text-center underline mt-2" >World Tour Blog </h1>
+                        <br />
 
                         <div className="row row-cols-1 row-cols-md-3 g-4" >
 

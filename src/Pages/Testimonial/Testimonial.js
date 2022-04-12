@@ -6,7 +6,7 @@ const Testimonial = (props) => {
     return (
         <div>
 
-            <div className='text-white' data-aos="zoom-out">
+            <div className='text-white' data-aos="zoom-in">
                 <div className="col">
                     <div className="card h-100 shadow-lg" style={{ background: "#19547b" }} >
                         <img src={image} className="card-img-top" width="500" height="500" alt="..." />

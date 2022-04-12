@@ -25,31 +25,30 @@ const Services = () => {
 
 
     return (
-        <div>
+        <div className=" mx-auto mt-5">
+            <h1 className=" fw-bolder text-uppercase w-100 mt-5 text-center underline mt-2" >World Tour Blog </h1>
             {
                 services.length === 0 ?
-                    <div className="spinner-border text-dark " role="status" >
+                    <div className="spinner-border text-dark text-center " role="status" >
                         <span className="visually-hidden">Loading...</span>
                     </div>
 
                     :
-                    <div className=" mx-auto mt-5">
-                        <h1 className=" fw-bolder text-uppercase w-100 mt-5 text-center underline mt-2" >World Tour Blog </h1>
-                        <br />
-
-                        <div className="row row-cols-1 row-cols-md-3 g-4" >
-
-                            {
-                                services.map(service => <Service key={service._id} service={service}></Service>)
-                            }
 
 
+                    <div className="row row-cols-1 row-cols-md-3 g-4" >
+
+                        {
+                            services.map(service => <Service key={service._id} service={service}></Service>)
+                        }
 
 
-                        </div>
 
 
                     </div>
+
+
+
             }
 
             <div className="pagination  justify-content-center mt-4">

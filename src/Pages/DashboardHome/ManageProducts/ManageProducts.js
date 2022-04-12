@@ -29,7 +29,7 @@ const ManageProducts = () => {
     }
 
     return (
-        <div className=" ">
+        <div>
             <div>
                 <table className="table table-borderless  text-bold"  >
                     <thead>
